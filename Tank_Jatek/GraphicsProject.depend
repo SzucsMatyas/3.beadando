@@ -1,0 +1,420 @@
+# depslib dependency file v1.0
+1525141750 source:c:\users\matyi\desktop\world of tanks ©\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525132208 c:\users\matyi\desktop\world of tanks ©\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1488256928 c:\users\matyi\desktop\world of tanks ©\include\graphics.hpp
+	<string>
+
+1525139123 c:\users\matyi\desktop\world of tanks ©\widget.hpp
+	"graphics.hpp"
+
+1525140399 source:c:\users\matyi\desktop\world of tanks ©\pushbutton.cpp
+	"pushbutton.hpp"
+
+1525136596 c:\users\matyi\desktop\world of tanks ©\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1525174297 c:\users\matyi\desktop\world of tanks ©\window.hpp
+	"widget.hpp"
+	<vector>
+	<fstream>
+
+1525140389 source:c:\users\matyi\desktop\world of tanks ©\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1524768861 c:\users\matyi\desktop\world of tanks ©\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1524133389 source:c:\users\matyi\desktop\world of tanks ©\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1525138379 c:\users\matyi\desktop\world of tanks ©\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525141430 source:c:\users\matyi\desktop\world of tanks ©\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1525141419 c:\users\matyi\desktop\world of tanks ©\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1525139123 source:c:\users\matyi\desktop\world of tanks ©\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1525185948 source:c:\users\matyi\desktop\world of tanks ©\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	<vector>
+	<sstream>
+	<istream>
+
+1525178074 source:c:\users\matyi\desktop\world of tanks ©\window.cpp
+	"window.hpp"
+
+1525186136 source:c:\users\matyi\desktop\world of tanks ©\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+
+1525176680 c:\users\matyi\desktop\world of tanks ©\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525192570 source:g:\world of tanks ©\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525192373 g:\world of tanks ©\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1488256928 g:\world of tanks ©\include\graphics.hpp
+	<string>
+
+1525203230 g:\world of tanks ©\widget.hpp
+	"graphics.hpp"
+	<vector>
+
+1525210822 source:g:\world of tanks ©\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	"mapdraw.hpp"
+	<vector>
+	<sstream>
+	<istream>
+
+1525192373 g:\world of tanks ©\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525192373 g:\world of tanks ©\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1525174297 g:\world of tanks ©\window.hpp
+	"widget.hpp"
+	<vector>
+	<fstream>
+
+1525192371 g:\world of tanks ©\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1525192373 g:\world of tanks ©\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525208924 g:\world of tanks ©\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1525192578 source:g:\world of tanks ©\pushbutton.cpp
+	"pushbutton.hpp"
+
+1525192582 source:g:\world of tanks ©\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1525192587 source:g:\world of tanks ©\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1525192592 source:g:\world of tanks ©\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1525139123 source:g:\world of tanks ©\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1525203393 source:g:\world of tanks ©\window.cpp
+	"window.hpp"
+
+1525209897 source:g:\world of tanks ©\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+	<cmath>
+	<iostream>
+	<vector>
+
+1525210702 source:g:\world of tanks ©\mapdraw.cpp
+	"mapdraw.hpp"
+	"graphics.hpp"
+
+1525210761 g:\world of tanks ©\mapdraw.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525192570 source:e:\world of tanks ©\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525192373 e:\world of tanks ©\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1488256928 e:\world of tanks ©\include\graphics.hpp
+	<string>
+
+1525203230 e:\world of tanks ©\widget.hpp
+	"graphics.hpp"
+	<vector>
+
+1525210822 source:e:\world of tanks ©\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	"mapdraw.hpp"
+	<vector>
+	<sstream>
+	<istream>
+
+1525192373 e:\world of tanks ©\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525192373 e:\world of tanks ©\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1525174297 e:\world of tanks ©\window.hpp
+	"widget.hpp"
+	<vector>
+	<fstream>
+
+1525192371 e:\world of tanks ©\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1525192373 e:\world of tanks ©\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525208924 e:\world of tanks ©\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1525210761 e:\world of tanks ©\mapdraw.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525210702 source:e:\world of tanks ©\mapdraw.cpp
+	"mapdraw.hpp"
+	"graphics.hpp"
+
+1525192578 source:e:\world of tanks ©\pushbutton.cpp
+	"pushbutton.hpp"
+
+1525192582 source:e:\world of tanks ©\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1525192587 source:e:\world of tanks ©\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1525209897 source:e:\world of tanks ©\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+	<cmath>
+	<iostream>
+	<vector>
+
+1525192592 source:e:\world of tanks ©\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1525139123 source:e:\world of tanks ©\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1525203393 source:e:\world of tanks ©\window.cpp
+	"window.hpp"
+
+1525263269 source:e:\world of tanks ©\clouds.cpp
+	"clouds.hpp"
+	"graphics.hpp"
+
+1525263269 e:\world of tanks ©\clouds.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525263269 source:g:\world of tanks ©\clouds.cpp
+	"clouds.hpp"
+	"graphics.hpp"
+
+1525263269 g:\world of tanks ©\clouds.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525263269 source:d:\github\3.beadando\tank_jatek\clouds.cpp
+	"clouds.hpp"
+	"graphics.hpp"
+
+1525263269 d:\github\3.beadando\tank_jatek\clouds.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1488256928 d:\github\3.beadando\tank_jatek\include\graphics.hpp
+	<string>
+
+1525873428 d:\github\3.beadando\tank_jatek\widget.hpp
+	"graphics.hpp"
+	<vector>
+
+1525192570 source:d:\github\3.beadando\tank_jatek\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525192373 d:\github\3.beadando\tank_jatek\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1525874269 source:d:\github\3.beadando\tank_jatek\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	"mapdraw.hpp"
+	"clouds.hpp"
+	"master.hpp"
+	<vector>
+	<sstream>
+	<istream>
+	<iostream>
+
+1525192373 d:\github\3.beadando\tank_jatek\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525872342 d:\github\3.beadando\tank_jatek\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1525870978 d:\github\3.beadando\tank_jatek\window.hpp
+	"widget.hpp"
+	<vector>
+	<fstream>
+
+1525192371 d:\github\3.beadando\tank_jatek\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1525192373 d:\github\3.beadando\tank_jatek\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525873515 d:\github\3.beadando\tank_jatek\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+
+1525210761 d:\github\3.beadando\tank_jatek\mapdraw.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525210702 source:d:\github\3.beadando\tank_jatek\mapdraw.cpp
+	"mapdraw.hpp"
+	"graphics.hpp"
+
+1525872346 source:d:\github\3.beadando\tank_jatek\pushbutton.cpp
+	"pushbutton.hpp"
+
+1525192582 source:d:\github\3.beadando\tank_jatek\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1525192587 source:d:\github\3.beadando\tank_jatek\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1525874281 source:d:\github\3.beadando\tank_jatek\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+	<cmath>
+	<iostream>
+	<vector>
+
+1525192592 source:d:\github\3.beadando\tank_jatek\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1525139123 source:d:\github\3.beadando\tank_jatek\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1525874074 source:d:\github\3.beadando\tank_jatek\window.cpp
+	"window.hpp"
+	"master.hpp"
+
+1525873128 source:d:\github\3.beadando\tank_jatek\master.cpp
+	"master.hpp"
+	"graphics.hpp"
+
+1525873102 d:\github\3.beadando\tank_jatek\master.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
