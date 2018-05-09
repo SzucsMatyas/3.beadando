@@ -47,6 +47,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="mapdraw.cpp" />
 		<Unit filename="mapdraw.hpp" />
+		<Unit filename="master.cpp" />
+		<Unit filename="master.hpp" />
 		<Unit filename="pushbutton.cpp" />
 		<Unit filename="pushbutton.hpp" />
 		<Unit filename="statictext.cpp" />

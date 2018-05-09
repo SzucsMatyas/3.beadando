@@ -322,7 +322,7 @@
 	"widget.hpp"
 	<vector>
 
-1525874269 source:d:\github\3.beadando\tank_jatek\main.cpp
+1525901609 source:d:\github\3.beadando\tank_jatek\main.cpp
 	"graphics.hpp"
 	"widget.hpp"
 	"szamolo.hpp"
@@ -349,8 +349,9 @@
 	"window.hpp"
 	<functional>
 
-1525870978 d:\github\3.beadando\tank_jatek\window.hpp
+1525895005 d:\github\3.beadando\tank_jatek\window.hpp
 	"widget.hpp"
+	"master.hpp"
 	<vector>
 	<fstream>
 
@@ -364,7 +365,7 @@
 	"graphics.hpp"
 	"widget.hpp"
 
-1525873515 d:\github\3.beadando\tank_jatek\tank.hpp
+1525899908 d:\github\3.beadando\tank_jatek\tank.hpp
 	"graphics.hpp"
 	"widget.hpp"
 	"master.hpp"
@@ -390,7 +391,7 @@
 	"graphics.hpp"
 	<sstream>
 
-1525874281 source:d:\github\3.beadando\tank_jatek\tank.cpp
+1525902612 source:d:\github\3.beadando\tank_jatek\tank.cpp
 	"tank.hpp"
 	"graphics.hpp"
 	<cmath>
@@ -406,15 +407,18 @@
 	"widget.hpp"
 	"graphics.hpp"
 
-1525874074 source:d:\github\3.beadando\tank_jatek\window.cpp
+1525900976 source:d:\github\3.beadando\tank_jatek\window.cpp
 	"window.hpp"
 	"master.hpp"
 
-1525873128 source:d:\github\3.beadando\tank_jatek\master.cpp
+1525902645 source:d:\github\3.beadando\tank_jatek\master.cpp
 	"master.hpp"
+	"tank.hpp"
 	"graphics.hpp"
+	<iostream>
+	<cmath>
 
-1525873102 d:\github\3.beadando\tank_jatek\master.hpp
+1525895992 d:\github\3.beadando\tank_jatek\master.hpp
 	"graphics.hpp"
 	"widget.hpp"
 

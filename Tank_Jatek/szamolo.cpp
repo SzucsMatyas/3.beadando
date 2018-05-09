@@ -4,8 +4,9 @@
 
 using namespace genv;
 
-Szamolo::Szamolo(int x, int y, int sx, int sy, int ct, int ctmin, int ctmax) : Widget(x,y,sx,sy)
+Szamolo::Szamolo(int x, int y, int sx, int sy, int ct, int ctmin, int ctmax, std::string myname) : Widget(x,y,sx,sy)
 {
+    MYNAME = myname;
     CT = ct;
     CTMIN = ctmin;
     CTMAX = ctmax;
@@ -109,6 +110,7 @@ void Szamolo::set_ct(int temp)
     CT=temp;
 }
 
-void Szamolo::t_effects(event ev)
+std::string Szamolo::get_myname()
 {
+    return MYNAME;
 }

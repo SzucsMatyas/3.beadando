@@ -2,6 +2,7 @@
 #define WINDOW_HPP_INCLUDED
 
 #include "widget.hpp"
+#include "master.hpp"
 #include <vector>
 #include <fstream>
 
@@ -10,7 +11,7 @@ protected:
     std::vector<Widget*> widgets;
 public:
     virtual void esemeny(std::string wut){}
-    void event_loop(int XX, int YY, bool fs) ;
+    void event_loop(int XX, int YY, bool fs, Master mester) ;
 };
 
 
