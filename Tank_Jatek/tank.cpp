@@ -13,7 +13,7 @@ Tank::Tank(int x, int y, int sx, int sy, double mhp, double shp, int _r, int _g,
     : Widget(x,y,sx,sy)
 {
     oldal=_oldal;
-    deg=20;
+    deg=15;
     main_hp = mhp;
     top_hp = shp;
     back_hp = front_hp = shp*1.5;
@@ -23,8 +23,6 @@ Tank::Tank(int x, int y, int sx, int sy, double mhp, double shp, int _r, int _g,
     shp_part = shp/255;
     mhp_part = mhp;
 }
-
-Tank::Tank(): Widget(0,0,0,0){}
 
 void Tank::handle(event ev)
 {
@@ -65,7 +63,7 @@ void Tank::handle(event ev)
 //        deg-=1;
 }
 
-void Tank::draw()
+void Tank::draw(event ev)
 {
     gout << move_to(_X, _Y) << color(0,0,0) << box(_SX,_SY); //main part
     gout << move_to(_X+3, _Y+3) << color(r,g,b) << box(_SX-6,_SY-6); //main part
@@ -95,11 +93,20 @@ void Tank::draw()
         gout << move_to(_X-(_SX/5)+1, _Y-(_SX/5)-23) << color(0,153,0) << box(main_hp*((_SX+(_SX/5)*2-2)/mhp_part),8); //main_hp health bar green part
 
     if(oldal=='l'){
-        gout << move_to(_X+_SX/2, _Y+_SY/5) << color(0,0,0) << line_to((_X+_SX/2)+(cos(deg*(PI/180))*_SX),(_Y+_SY/5)-(sin(deg*(PI/180)))*_SX); //barrel
-        std::cout << _X << " " << _SX << " " << deg << std::endl;
+        for(int i=-2; i<=2;i++){
+            for(int j=-2; j<=2;j++){
+                gout << move_to(_X+_SX/2 +i, _Y+_SY/5 +j) << color(32,32,32) << line_to((_X+_SX/2)+(cos(deg*(PI/180))*_SX) +i,(_Y+_SY/5)-(sin(deg*(PI/180)))*_SX +j); //barrel
+            }
+        }
     }
     if(oldal=='r')
-        gout << move_to(_X+_SX/2, _Y+_SY/5) << color(0,0,0) << line_to((_X+_SX/2)-(cos(deg*(PI/180))*_SX),(_Y+_SY/5)-(sin(deg*(PI/180)))*_SX); //barrel
+        for(int i=-2; i<=2;i++){
+            for(int j=-2; j<=2;j++){
+                gout << move_to(_X+_SX/2 +i, _Y+_SY/5 +j) << color(32,32,32) << line_to((_X+_SX/2)-(cos(deg*(PI/180))*_SX) +i,(_Y+_SY/5)-(sin(deg*(PI/180)))*_SX +j); //barrel
+            }
+        }
+
+//    std::cout << "123" << std::endl;
 }
 int Tank::get_val()
 {
@@ -114,19 +121,8 @@ bool Tank::hit_det(double msx, double msy, int XX, int YY)
         return 0;
 }
 
-void Tank::t_effects(int cx, int cy, int intensity)
-{
 
-}
-
-void Tank::bullet_draw(double bx, double by)
-{
-    if(by>=0){
-        gout << move_to(bx,by) << color(0,0,0) << box(6,6) << refresh;
-        gout << move_to(bx,by) << color(255,255,255) << box(6,6);
-    }
-    if(by<0){
-        gout << move_to(bx,0) << color(0,0,255) << box(6,6) << refresh;
-        gout << move_to(bx,0) << color(255,255,255) << box(6,6);
-    }
-}
+void Tank::set_fronthp(double temp){front_hp=temp;}
+void Tank::set_backhp(double temp){back_hp=temp;}
+void Tank::set_tophp(double temp){top_hp=temp;}
+void Tank::set_mainhp(double temp){main_hp=temp;}

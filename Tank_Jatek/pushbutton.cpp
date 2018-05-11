@@ -14,17 +14,19 @@ PushButton::PushButton(int x, int y, int sx, int sy, std::string s, std::functio
 void PushButton::handle(genv::event ev) {
     if(is_selected(ev.pos_x, ev.pos_y) && ev.button==+btn_left){
         focus=1;
+        draw(ev);
     }
     if(focus && ev.button==-btn_left){
         focus=0;
     }
     if((ev.button==btn_left && is_selected(ev.pos_x, ev.pos_y)) || (ev.keycode==key_enter && focus)){
         action();
+        focus=0;
     }
 
 }
 
-void PushButton::draw(){
+void PushButton::draw(genv::event ev){
     gout << color(0,0,0) << move_to(_X, _Y) << box(_SX, _SY);
     if (focus)
         gout << color(200,200,200);

@@ -9,9 +9,8 @@ private:
     std::string txt;
 public:
     StaticText(int x, int y, int sx, int sy, std::string _txt);
-    virtual void draw() ;
+    virtual void draw(genv::event ev) ;
     virtual void handle(genv::event ev);
-    virtual void t_effects(genv::event ev);
     virtual void set_text(std::string s);
     virtual int get_val();
 };

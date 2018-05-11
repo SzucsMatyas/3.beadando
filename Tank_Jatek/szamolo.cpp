@@ -57,7 +57,7 @@ void Szamolo::handle(event ev)
     }
 }
 
-void Szamolo::draw()
+void Szamolo::draw(event ev)
 {
     std::stringstream SS;
     SS << CT;

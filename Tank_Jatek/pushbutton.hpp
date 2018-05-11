@@ -10,7 +10,7 @@ class PushButton : public Widget {
     std::function<void()> _functor;
 public:
     PushButton(int x, int y, int sx, int sy, std::string s, std::function<void()> functor);
-    virtual void draw();
+    virtual void draw(genv::event ev);
     virtual void handle(genv::event ev);
     virtual void t_effects(int XX, int YY);
     virtual int get_val();

@@ -6,13 +6,12 @@
 
 class Clouds : public Widget {
 private:
-    int wind;
+    int XX, YY;
+    double wind;
 public:
-    Clouds(int x, int y, int sx, int sy);
-    virtual void draw() ;
-    virtual void handle(genv::event ev);
-    virtual void t_effects(genv::event ev);
-    virtual int get_val();
+    Clouds(int x, int y, int sx, int sy, int xx, int yy);
+    virtual void draw(genv::event ev) ;
+    virtual void set_wind(double w){wind=w;};
 };
 
 

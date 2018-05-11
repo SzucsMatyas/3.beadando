@@ -13,13 +13,14 @@ private:
     char oldal;
 public:
     Tank(int x, int y, int sx, int sy, double mhp, double shp, int _r, int _g, int _b, char _oldal);
-    Tank();
-    virtual void draw() ;
+    virtual void draw(genv::event ev) ;
     virtual void handle(genv::event ev);
-    virtual void t_effects(int cx, int cy, int intensity);
     virtual int get_val();
     virtual bool hit_det(double msx, double msy, int XX, int YY);
-    virtual void bullet_draw(double bx, double by);
+    virtual void set_fronthp(double temp);
+    virtual void set_backhp(double temp);
+    virtual void set_tophp(double temp);
+    virtual void set_mainhp(double temp);
 };
 
 #endif // TANK_HPP_INCLUDED

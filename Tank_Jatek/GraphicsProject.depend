@@ -422,3 +422,389 @@
 	"graphics.hpp"
 	"widget.hpp"
 
+1525263269 source:e:\3.beadando\tank_jatek\clouds.cpp
+	"clouds.hpp"
+	"graphics.hpp"
+
+1525263269 e:\3.beadando\tank_jatek\clouds.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1488256928 e:\3.beadando\tank_jatek\include\graphics.hpp
+	<string>
+
+1525873428 e:\3.beadando\tank_jatek\widget.hpp
+	"graphics.hpp"
+	<vector>
+
+1525192570 source:e:\3.beadando\tank_jatek\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525192373 e:\3.beadando\tank_jatek\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1525949861 source:e:\3.beadando\tank_jatek\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	"mapdraw.hpp"
+	"clouds.hpp"
+	"master.hpp"
+	<vector>
+	<sstream>
+	<istream>
+	<iostream>
+
+1525942930 e:\3.beadando\tank_jatek\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525872342 e:\3.beadando\tank_jatek\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1525895005 e:\3.beadando\tank_jatek\window.hpp
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+	<fstream>
+
+1525950261 e:\3.beadando\tank_jatek\master.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525192371 e:\3.beadando\tank_jatek\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1525192373 e:\3.beadando\tank_jatek\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525899908 e:\3.beadando\tank_jatek\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+
+1525210761 e:\3.beadando\tank_jatek\mapdraw.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525210702 source:e:\3.beadando\tank_jatek\mapdraw.cpp
+	"mapdraw.hpp"
+	"graphics.hpp"
+
+1525949810 source:e:\3.beadando\tank_jatek\master.cpp
+	"master.hpp"
+	"tank.hpp"
+	"graphics.hpp"
+	<iostream>
+	<cmath>
+
+1525872346 source:e:\3.beadando\tank_jatek\pushbutton.cpp
+	"pushbutton.hpp"
+
+1525192582 source:e:\3.beadando\tank_jatek\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1525903013 source:e:\3.beadando\tank_jatek\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1525942996 source:e:\3.beadando\tank_jatek\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+	<cmath>
+	<iostream>
+	<vector>
+
+1525192592 source:e:\3.beadando\tank_jatek\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1525139123 source:e:\3.beadando\tank_jatek\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1525900976 source:e:\3.beadando\tank_jatek\window.cpp
+	"window.hpp"
+	"master.hpp"
+
+1525263269 source:c:\users\matyi\desktop\tank_jatek\clouds.cpp
+	"clouds.hpp"
+	"graphics.hpp"
+
+1525263269 c:\users\matyi\desktop\tank_jatek\clouds.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1488256928 c:\users\matyi\desktop\tank_jatek\include\graphics.hpp
+	<string>
+
+1525964880 c:\users\matyi\desktop\tank_jatek\widget.hpp
+	"graphics.hpp"
+	<vector>
+
+1525192570 source:c:\users\matyi\desktop\tank_jatek\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525192373 c:\users\matyi\desktop\tank_jatek\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1525210702 source:c:\users\matyi\desktop\tank_jatek\mapdraw.cpp
+	"mapdraw.hpp"
+	"graphics.hpp"
+
+1525210761 c:\users\matyi\desktop\tank_jatek\mapdraw.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525872346 source:c:\users\matyi\desktop\tank_jatek\pushbutton.cpp
+	"pushbutton.hpp"
+
+1525872342 c:\users\matyi\desktop\tank_jatek\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1525895005 c:\users\matyi\desktop\tank_jatek\window.hpp
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+	<fstream>
+
+1525951496 c:\users\matyi\desktop\tank_jatek\master.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1525192582 source:c:\users\matyi\desktop\tank_jatek\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1525192373 c:\users\matyi\desktop\tank_jatek\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525903013 source:c:\users\matyi\desktop\tank_jatek\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1525942930 c:\users\matyi\desktop\tank_jatek\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1525951911 source:c:\users\matyi\desktop\tank_jatek\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+	<cmath>
+	<iostream>
+	<vector>
+
+1525951896 c:\users\matyi\desktop\tank_jatek\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+
+1525192592 source:c:\users\matyi\desktop\tank_jatek\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1525192371 c:\users\matyi\desktop\tank_jatek\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1525964730 source:c:\users\matyi\desktop\tank_jatek\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<iostream>
+
+1525900976 source:c:\users\matyi\desktop\tank_jatek\window.cpp
+	"window.hpp"
+	"master.hpp"
+
+1525963237 source:c:\users\matyi\desktop\tank_jatek\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	"mapdraw.hpp"
+	"clouds.hpp"
+	"master.hpp"
+	<vector>
+	<sstream>
+	<istream>
+	<iostream>
+
+1525962316 source:c:\users\matyi\desktop\tank_jatek\master.cpp
+	"master.hpp"
+	"tank.hpp"
+	"graphics.hpp"
+	<iostream>
+	<cmath>
+
+1526054333 source:g:\tank_jatek\clouds.cpp
+	"clouds.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1526054986 g:\tank_jatek\clouds.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1488256928 g:\tank_jatek\include\graphics.hpp
+	<string>
+
+1526059856 g:\tank_jatek\widget.hpp
+	"graphics.hpp"
+	<vector>
+
+1525192570 source:g:\tank_jatek\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525192373 g:\tank_jatek\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1526060103 source:g:\tank_jatek\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	"clouds.hpp"
+	"master.hpp"
+	<vector>
+	<sstream>
+	<istream>
+	<iostream>
+	<time.h>
+	<stdlib.h>
+
+1526053201 g:\tank_jatek\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1526053149 g:\tank_jatek\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1525895005 g:\tank_jatek\window.hpp
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+	<fstream>
+
+1526058413 g:\tank_jatek\master.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+
+1525192371 g:\tank_jatek\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1526053131 g:\tank_jatek\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1526053071 g:\tank_jatek\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+
+1525210761 g:\tank_jatek\mapdraw.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1526038864 source:g:\tank_jatek\mapdraw.cpp
+	"mapdraw.hpp"
+	"graphics.hpp"
+
+1526060699 source:g:\tank_jatek\master.cpp
+	"master.hpp"
+	"tank.hpp"
+	"graphics.hpp"
+	<iostream>
+	<cmath>
+
+1526053166 source:g:\tank_jatek\pushbutton.cpp
+	"pushbutton.hpp"
+
+1526053122 source:g:\tank_jatek\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1526053201 source:g:\tank_jatek\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1526058578 source:g:\tank_jatek\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+	<cmath>
+	<iostream>
+	<vector>
+
+1525192592 source:g:\tank_jatek\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1526053316 source:g:\tank_jatek\window.cpp
+	"window.hpp"
+	"master.hpp"
+
+1526059878 source:g:\tank_jatek\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<iostream>
+

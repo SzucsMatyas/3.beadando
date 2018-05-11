@@ -14,11 +14,11 @@ void StaticText::handle(event ev)
 {
 }
 
-void StaticText::draw()
+void StaticText::draw(event ev)
 {
     gout << move_to(_X, _Y) << color(0,0,0) << box(_SX,_SY);
     gout << move_to(_X+1, _Y+1) << color(120,120,120) << box(_SX-2,_SY-2);
-    gout << move_to(_X+4, _Y+_SY/2 +4) << color(0,0,0) << text(txt);
+    gout << color(0,0,0) << move_to(_X+_SX/2-gout.twidth(txt)/2, _Y+_SY/2 +4) << text(txt);
 }
 
 int StaticText::get_val()
@@ -29,8 +29,4 @@ int StaticText::get_val()
 void StaticText::set_text(std::string s)
 {
     txt = s;
-}
-
-void StaticText::t_effects(event ev)
-{
 }
