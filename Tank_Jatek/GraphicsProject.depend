@@ -700,7 +700,7 @@
 	"widget.hpp"
 	<vector>
 
-1526060103 source:g:\tank_jatek\main.cpp
+1526083987 source:g:\tank_jatek\main.cpp
 	"graphics.hpp"
 	"widget.hpp"
 	"szamolo.hpp"
@@ -719,22 +719,23 @@
 	<time.h>
 	<stdlib.h>
 
-1526053201 g:\tank_jatek\szamolo.hpp
+1526073314 g:\tank_jatek\szamolo.hpp
 	"graphics.hpp"
 	"widget.hpp"
+	<functional>
 
 1526053149 g:\tank_jatek\pushbutton.hpp
 	"widget.hpp"
 	"window.hpp"
 	<functional>
 
-1525895005 g:\tank_jatek\window.hpp
+1526078885 g:\tank_jatek\window.hpp
 	"widget.hpp"
 	"master.hpp"
 	<vector>
 	<fstream>
 
-1526058413 g:\tank_jatek\master.hpp
+1526083617 g:\tank_jatek\master.hpp
 	"graphics.hpp"
 	"widget.hpp"
 	<vector>
@@ -751,7 +752,7 @@
 	"graphics.hpp"
 	"widget.hpp"
 
-1526053071 g:\tank_jatek\tank.hpp
+1526071891 g:\tank_jatek\tank.hpp
 	"graphics.hpp"
 	"widget.hpp"
 	"master.hpp"
@@ -765,7 +766,7 @@
 	"mapdraw.hpp"
 	"graphics.hpp"
 
-1526060699 source:g:\tank_jatek\master.cpp
+1526083572 source:g:\tank_jatek\master.cpp
 	"master.hpp"
 	"tank.hpp"
 	"graphics.hpp"
@@ -779,12 +780,12 @@
 	"statictext.hpp"
 	"graphics.hpp"
 
-1526053201 source:g:\tank_jatek\szamolo.cpp
+1526073703 source:g:\tank_jatek\szamolo.cpp
 	"szamolo.hpp"
 	"graphics.hpp"
 	<sstream>
 
-1526058578 source:g:\tank_jatek\tank.cpp
+1526083066 source:g:\tank_jatek\tank.cpp
 	"tank.hpp"
 	"graphics.hpp"
 	<cmath>
@@ -807,4 +808,130 @@
 	<time.h>
 	<stdlib.h>
 	<iostream>
+
+1526054333 source:e:\tank_jatek\clouds.cpp
+	"clouds.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1526054986 e:\tank_jatek\clouds.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1488256928 e:\tank_jatek\include\graphics.hpp
+	<string>
+
+1526059856 e:\tank_jatek\widget.hpp
+	"graphics.hpp"
+	<vector>
+
+1525192570 source:e:\tank_jatek\lista.cpp
+	"lista.hpp"
+	"graphics.hpp"
+
+1525192373 e:\tank_jatek\lista.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1526083327 source:e:\tank_jatek\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"szamolo.hpp"
+	"lista.hpp"
+	"pushbutton.hpp"
+	"window.hpp"
+	"textbox.hpp"
+	"statictext.hpp"
+	"tank.hpp"
+	"clouds.hpp"
+	"master.hpp"
+	<vector>
+	<sstream>
+	<istream>
+	<iostream>
+	<time.h>
+	<stdlib.h>
+
+1526073314 e:\tank_jatek\szamolo.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<functional>
+
+1526053149 e:\tank_jatek\pushbutton.hpp
+	"widget.hpp"
+	"window.hpp"
+	<functional>
+
+1526078885 e:\tank_jatek\window.hpp
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+	<fstream>
+
+1526083617 e:\tank_jatek\master.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+
+1525192371 e:\tank_jatek\textbox.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<string>
+	<functional>
+
+1526053131 e:\tank_jatek\statictext.hpp
+	"graphics.hpp"
+	"widget.hpp"
+
+1526071891 e:\tank_jatek\tank.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	"master.hpp"
+	<vector>
+
+1526083572 source:e:\tank_jatek\master.cpp
+	"master.hpp"
+	"tank.hpp"
+	"graphics.hpp"
+	<iostream>
+	<cmath>
+
+1526053166 source:e:\tank_jatek\pushbutton.cpp
+	"pushbutton.hpp"
+
+1526053122 source:e:\tank_jatek\statictext.cpp
+	"statictext.hpp"
+	"graphics.hpp"
+
+1526073703 source:e:\tank_jatek\szamolo.cpp
+	"szamolo.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1526083066 source:e:\tank_jatek\tank.cpp
+	"tank.hpp"
+	"graphics.hpp"
+	<cmath>
+	<iostream>
+	<vector>
+
+1525192592 source:e:\tank_jatek\textbox.cpp
+	"textbox.hpp"
+	"graphics.hpp"
+	<string>
+
+1526059878 source:e:\tank_jatek\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<iostream>
+
+1526053316 source:e:\tank_jatek\window.cpp
+	"window.hpp"
+	"master.hpp"
 

@@ -4,19 +4,12 @@
 
 using namespace genv;
 
-Szamolo::Szamolo(int x, int y, int sx, int sy, int ct, int ctmin, int ctmax, std::string myname) : Widget(x,y,sx,sy)
+Szamolo::Szamolo(int x, int y, int sx, int sy, int ct, int ctmin, int ctmax, std::function<void()> functor) : Widget(x,y,sx,sy), _functor(functor), CT(ct), CTMIN(ctmin), CTMAX(ctmax)
 {
-    MYNAME = myname;
-    CT = ct;
-    CTMIN = ctmin;
-    CTMAX = ctmax;
 }
 
-Szamolo::Szamolo(int x, int y, int sx, int sy, int ctmin, int ctmax) : Widget(x,y,sx,sy)
+Szamolo::Szamolo(int x, int y, int sx, int sy, int ctmin, int ctmax) : Widget(x,y,sx,sy), CT(ctmin), CTMIN(ctmin), CTMAX(ctmax)
 {
-    CT = ctmin;
-    CTMIN = ctmin;
-    CTMAX = ctmax;
 }
 
 
@@ -55,6 +48,7 @@ void Szamolo::handle(event ev)
     if (focus && ev.button == btn_wheeldown && CT-1 >= CTMIN){
         CT--;
     }
+    action();
 }
 
 void Szamolo::draw(event ev)
@@ -110,7 +104,6 @@ void Szamolo::set_ct(int temp)
     CT=temp;
 }
 
-std::string Szamolo::get_myname()
-{
-    return MYNAME;
+void Szamolo::action(){
+    _functor();
 }

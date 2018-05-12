@@ -13,7 +13,7 @@ Tank::Tank(int x, int y, int sx, int sy, double mhp, double shp, int _r, int _g,
     : Widget(x,y,sx,sy)
 {
     oldal=_oldal;
-    deg=15;
+    deg=20;
     main_hp = mhp;
     top_hp = shp;
     back_hp = front_hp = shp*1.5;
@@ -99,14 +99,13 @@ void Tank::draw(event ev)
             }
         }
     }
-    if(oldal=='r')
+    if(oldal=='r'){
         for(int i=-2; i<=2;i++){
             for(int j=-2; j<=2;j++){
                 gout << move_to(_X+_SX/2 +i, _Y+_SY/5 +j) << color(32,32,32) << line_to((_X+_SX/2)-(cos(deg*(PI/180))*_SX) +i,(_Y+_SY/5)-(sin(deg*(PI/180)))*_SX +j); //barrel
             }
         }
-
-//    std::cout << "123" << std::endl;
+    }
 }
 int Tank::get_val()
 {

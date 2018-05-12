@@ -21,6 +21,7 @@ public:
     virtual void set_backhp(double temp);
     virtual void set_tophp(double temp);
     virtual void set_mainhp(double temp);
+    virtual void set_deg(double DEG){deg=DEG;};
 };
 
 #endif // TANK_HPP_INCLUDED

@@ -45,8 +45,6 @@
 		<Unit filename="lista.cpp" />
 		<Unit filename="lista.hpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="mapdraw.cpp" />
-		<Unit filename="mapdraw.hpp" />
 		<Unit filename="master.cpp" />
 		<Unit filename="master.hpp" />
 		<Unit filename="pushbutton.cpp" />

@@ -10,7 +10,6 @@ class Window {
 protected:
     std::vector<Widget*> widgets;
 public:
-    virtual void esemeny(std::string wut){}
     void event_loop(int XX, int YY, bool fs, Master mester) ;
 };
 
