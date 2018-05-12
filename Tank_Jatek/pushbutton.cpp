@@ -14,7 +14,7 @@ PushButton::PushButton(int x, int y, int sx, int sy, std::string s, std::functio
 void PushButton::handle(genv::event ev) {
     if(is_selected(ev.pos_x, ev.pos_y) && ev.button==+btn_left){
         focus=1;
-        draw(ev);
+        draw();
     }
     if(focus && ev.button==-btn_left){
         focus=0;
@@ -26,12 +26,16 @@ void PushButton::handle(genv::event ev) {
 
 }
 
-void PushButton::draw(genv::event ev){
+void PushButton::draw(){
     gout << color(0,0,0) << move_to(_X, _Y) << box(_SX, _SY);
-    if (focus)
-        gout << color(200,200,200);
-    else
+    if (focus && focusable)
+        gout << color(153,255,153);
+    if (!focus && focusable && !hovered)
         gout << color(160,160,160);
+    if (!focus && focusable && hovered)
+        gout << color(200,200,200);
+    if (!focusable)
+        gout << color(120,120,120);
     gout << move_to(_X+1, _Y+1) << box(_SX-2, _SY-2);
     gout << color(0,0,0) << move_to(_X+_SX/2-gout.twidth(_felirat)/2, _Y+_SY/2 +4) << text(_felirat);
 }

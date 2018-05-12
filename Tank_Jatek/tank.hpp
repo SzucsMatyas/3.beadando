@@ -13,8 +13,7 @@ private:
     char oldal;
 public:
     Tank(int x, int y, int sx, int sy, double mhp, double shp, int _r, int _g, int _b, char _oldal);
-    virtual void draw(genv::event ev) ;
-    virtual void handle(genv::event ev);
+    virtual void draw() ;
     virtual int get_val();
     virtual bool hit_det(double msx, double msy, int XX, int YY);
     virtual void set_fronthp(double temp);
@@ -22,6 +21,7 @@ public:
     virtual void set_tophp(double temp);
     virtual void set_mainhp(double temp);
     virtual void set_deg(double DEG){deg=DEG;};
+    virtual void reset(double mhp, double shp);
 };
 
 #endif // TANK_HPP_INCLUDED

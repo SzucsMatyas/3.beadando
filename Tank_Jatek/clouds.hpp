@@ -10,7 +10,7 @@ private:
     double wind;
 public:
     Clouds(int x, int y, int sx, int sy, int xx, int yy);
-    virtual void draw(genv::event ev) ;
+    virtual void draw() ;
     virtual void set_wind(double w){wind=w;};
 };
 

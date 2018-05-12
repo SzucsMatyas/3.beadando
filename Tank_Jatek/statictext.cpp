@@ -14,7 +14,7 @@ void StaticText::handle(event ev)
 {
 }
 
-void StaticText::draw(event ev)
+void StaticText::draw()
 {
     gout << move_to(_X, _Y) << color(0,0,0) << box(_SX,_SY);
     gout << move_to(_X+1, _Y+1) << color(120,120,120) << box(_SX-2,_SY-2);

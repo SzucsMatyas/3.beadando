@@ -1,7 +1,6 @@
 #include "tank.hpp"
 #include "graphics.hpp"
 #include <cmath>
-#include <iostream>
 #include <vector>
 
 using namespace genv;
@@ -12,11 +11,13 @@ const double PI  =3.141592653589793238463;
 Tank::Tank(int x, int y, int sx, int sy, double mhp, double shp, int _r, int _g, int _b, char _oldal)
     : Widget(x,y,sx,sy)
 {
+    focus=0;
+    focusable=0;
     oldal=_oldal;
     deg=20;
     main_hp = mhp;
     top_hp = shp;
-    back_hp = front_hp = shp*1.5;
+    back_hp = front_hp = shp*2;
     r=_r;
     g=_g;
     b=_b;
@@ -24,46 +25,15 @@ Tank::Tank(int x, int y, int sx, int sy, double mhp, double shp, int _r, int _g,
     mhp_part = mhp;
 }
 
-void Tank::handle(event ev)
+void Tank::reset(double mhp, double shp)
 {
-//    if(ev.keycode== -key_up && main_hp+1 <=mhp_part)
-//        main_hp++;
-//    if(ev.keycode== -key_down && main_hp-1 >=0)
-//        main_hp--;
-//    if(ev.keycode== -key_right){
-//        if(top_hp+1 <=shp_part*255)
-//            top_hp++;
-//        if(top_hp+1 >shp_part*255)
-//            top_hp=shp_part*255;
-//    }
-//    if(ev.keycode== -key_left){
-//        if(top_hp-1 >=0)
-//            top_hp--;
-//        if(top_hp-1 <0)
-//            top_hp=0;
-//    }
-//    if(ev.keycode== -key_pgup && back_hp+1 <=shp_part*255*1.5){
-//        back_hp++;
-//        front_hp++;
-//    }
-//    if(ev.keycode== -key_pgdn){
-//        if(back_hp-1 >=0){
-//            back_hp--;
-//            front_hp--;
-//        }
-//        if(back_hp-1 < 0){
-//            back_hp=0;
-//            front_hp=0;
-//        }
-//    }
-
-//    if(ev.button== btn_wheelup && deg+1<=135)
-//        deg+=1;
-//    if(ev.button== btn_wheeldown && deg-1>=0)
-//        deg-=1;
+    main_hp = mhp;
+    top_hp = shp;
+    back_hp = front_hp = shp*2;
+    deg=20;
 }
 
-void Tank::draw(event ev)
+void Tank::draw()
 {
     gout << move_to(_X, _Y) << color(0,0,0) << box(_SX,_SY); //main part
     gout << move_to(_X+3, _Y+3) << color(r,g,b) << box(_SX-6,_SY-6); //main part
@@ -74,12 +44,12 @@ void Tank::draw(event ev)
 
     if(back_hp>0){
         gout << move_to(_X-(_SX/5)-2, _Y-(_SX/5)-3) << color(0,0,0) << box(_SX/5,_SY+(_SX/5)+4); //back shield
-        gout << move_to(_X-(_SX/5), _Y-(_SX/5)-1) << color(255-(back_hp/(shp_part*1.5)),back_hp/(shp_part*1.5),0) << box((_SX/5)-4,_SY+(_SX/5)); //back shield
+        gout << move_to(_X-(_SX/5), _Y-(_SX/5)-1) << color(255-(back_hp/(shp_part*2)),back_hp/(shp_part*2),0) << box((_SX/5)-4,_SY+(_SX/5)); //back shield
     }
 
     if(front_hp>0){
         gout << move_to(_X+_SX+2, _Y-(_SX/5)-3) << color(0,0,0) << box(_SX/5,_SY+(_SX/5)+4); //front shield
-        gout << move_to(_X+_SX+4, _Y-(_SX/5)-1) << color(255-(front_hp/(shp_part*1.5)),front_hp/(shp_part*1.5),0) << box((_SX/5)-4,_SY+(_SX/5)); //front shield
+        gout << move_to(_X+_SX+4, _Y-(_SX/5)-1) << color(255-(front_hp/(shp_part*2)),front_hp/(shp_part*2),0) << box((_SX/5)-4,_SY+(_SX/5)); //front shield
     }
 
     if(top_hp>0){

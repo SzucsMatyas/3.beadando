@@ -8,22 +8,31 @@ class Widget {
 protected:
     double _X, _Y;
     int _SX, _SY;
-    bool focus, focusable;
+    bool focus, focusable, hovered;
 public:
     Widget(double x, double y, int sx, int sy);
     Widget();
     virtual bool is_selected(int mx, int my);
     virtual bool custom_is_selected(int mx, int my, int XX, int YY, int SXX, int SYY);
     virtual void set_focus(bool temp);
-    virtual void particle_effect(double bx, double by, double vxb, double vyb, int num, int XX, int YY,std::vector<Widget*> widgets, int R, int G, int B);
+    virtual void particle_effect(double bx, double by, double vxb, double vyb, int num, int XX, int YY,std::vector<Widget*> widgets, int R, int G, int B, int SIZE);
+    virtual void blood_effect(double bx, double by, double vxb, double vyb, int num, int XX, int YY,std::vector<Widget*> widgets, int R, int G, int B, int SIZE);
     virtual bool get_focus();
+    virtual void set_hovered(bool t)
+    {
+        hovered=t;
+    }
     virtual bool get_focusable();
+    virtual void set_focusable(bool t)
+    {
+        focusable=t;
+    }
+
     virtual void handle(genv::event ev);
     virtual void draw(int r, int g, int b);
-    virtual void draw(genv::event ev);
     virtual void draw();
     virtual int get_val();
-    virtual void bullet_draw(double bx, double by);
+    virtual void bullet_draw(double bx, double by, int XX, int YY, std::vector<Widget*> widgets);
 };
 class Particle : public Widget {
 protected:

@@ -20,11 +20,9 @@ Lista::Lista(int x, int y, int sx, int sy, int ls, std::vector<std::string> list
     if(LISTA.size()==0){
         LISTA.push_back("empty list");
         focusable=0;
-//        std::cout << "ok" << std::endl;
     }
     while(y+sy+LS*20 > 400)
         LS--; rolling = 1;
-//    std::cout << LS << std::endl;
 
 }
 
@@ -39,7 +37,6 @@ void Lista::handle(event ev)
         focus = 0;
         gout << move_to(_X, _Y+_SY) << color(255,255,255) << box(_SX, LS*20);
     }
-        //std::cout << focus << std::endl;
     if(!custom_is_selected(ev.pos_x, ev.pos_y, _X, _Y, _SX, _SY+20*LS) && is_open && ev.button==btn_left && focusable){
         focus = 0;
         gout << move_to(_X, _Y+_SY) << color(255,255,255) << box(_SX, LS*20);
@@ -75,7 +72,6 @@ void Lista::handle(event ev)
             LISTA[i].erase (LISTA[i].begin()+((_SX-_SY-3)/8)-1, LISTA[i].end());
         }
     }
-//    std::cout << focus << " " << is_open << std::endl;
 }
 
 void Lista::draw()
@@ -92,7 +88,6 @@ void Lista::draw()
         gout << move_to(_X, _Y+_SY) << color(0,0,0) << box(_SX, LS*20);
         gout << move_to(_X+1, _Y+_SY) << color(200,200,200) << box(_SX-2, LS*20 -1);
         gout << color(0,0,0);
-//        std::cout << act  << "   " << LISTA.size() << std::endl;
         for(size_t i=0; i<LS; i++){
                 if(act+i == selected){
                     gout << move_to(_X+4, _Y+_SY+(i)*20 +13) << color(255,0,0) << text(LISTA[act+i]);
@@ -105,7 +100,6 @@ void Lista::draw()
                     gout << move_to(_X+2, _Y+_SY+(i)*20 -1) << color(150,150,150)  << line_to(_X+_SX-3, _Y+_SY+(i)*20 -1);
                 }
         }
-//        std::cout << std::endl;
 
     }
     if(!is_open && focus && focusable){
@@ -137,7 +131,6 @@ void Lista::draw()
 
 void Lista::button(int mx, int my)
 {
-    //_X+_SX-_SY+1, _Y+1) << color(200,200,200) << box(_SY-2, _SY-2);
     if(mx>=_X+_SX-_SY+1 && mx<=_X+_SX-1 && my>=_Y+1 && my<=_Y+_SY -2)
         is_open = !is_open;
 }

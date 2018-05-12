@@ -12,7 +12,7 @@ protected:
 public:
     Szamolo(int x, int y, int sx, int sy, int ct, int ctmin, int ctmax, std::function<void()> functor);
     Szamolo(int x, int y, int sx, int sy, int ctmin, int ctmax);
-    virtual void draw(genv::event ev);
+    virtual void draw();
     virtual void handle(genv::event ev);
     virtual void buttons(int mx, int my);
     virtual int get_ct();

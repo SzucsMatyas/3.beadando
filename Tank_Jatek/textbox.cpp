@@ -16,7 +16,6 @@ void TextBox::handle(event ev)
 {
     if (is_selected(ev.pos_x, ev.pos_y) && ev.button==btn_left) {
         focus = 1;
-//        std::cout << "niga what" << std::endl;
 
         if(_firstchecked==0){
             txt = "";
@@ -27,8 +26,6 @@ void TextBox::handle(event ev)
         focus = 0;
     }
     if (focus && ev.keycode == +key_backspace){
-//        while(ev.keycode > 0)
-//            std::cout << ev.keycode << std::endl;
         del_text();
     }
     if (focus && ev.keycode!=key_backspace && ev.keycode>=32 && ev.keycode<=256){

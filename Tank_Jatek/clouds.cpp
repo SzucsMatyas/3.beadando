@@ -1,6 +1,5 @@
 #include "clouds.hpp"
 #include "graphics.hpp"
-#include <iostream>
 
 using namespace genv;
 
@@ -12,16 +11,14 @@ Clouds::Clouds(int x, int y, int sx, int sy, int xx, int yy)
     focusable = 0;
 }
 
-void Clouds::draw(event ev)
+void Clouds::draw()
 {
-    if(ev.type==ev_timer){
-        if(_X+wind<=XX && _X+wind>=0)
-            _X+=wind;
-        if(_X+wind>XX)
-            _X=_X+wind-XX;
-        if(_X+wind<0)
-            _X=XX-_X+wind;
-    }
+    if(_X+wind<=XX && _X+wind>=0)
+        _X+=wind;
+    if(_X+wind>XX)
+        _X=_X+wind-XX;
+    if(_X+wind<0)
+        _X=XX-_X+wind;
     if(_X+_SX<=XX)
         gout << move_to(_X, _Y) << color(255,255,255) << box(_SX,_SY);
     if(_X+_SX>XX){
