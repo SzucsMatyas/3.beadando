@@ -56,7 +56,7 @@ public:
                 if(eredmeny[8]==1 && eredmeny[9]==0)
                     tank1->particle_effect(eredmeny[4]-10,eredmeny[5],eredmeny[6],eredmeny[7],60,XX,YY,widgets,204,1,1,10);
                 if(eredmeny[9]==1)
-                    tank1->particle_effect(XX-6,eredmeny[5],-eredmeny[6],0,5,XX,YY,widgets,254,254,254,6);
+                    tank1->particle_effect(eredmeny[4],eredmeny[5],-eredmeny[6],0,5,XX,YY,widgets,254,254,254,6);
                 ms.set_turn();
                 ms.set_wind();
                 pb1->set_focusable(0);
@@ -78,7 +78,7 @@ public:
                 if(eredmeny[8]==1 && eredmeny[9]==0)
                     tank1->particle_effect(eredmeny[4]+15,eredmeny[5],eredmeny[6],eredmeny[7],60,XX,YY,widgets,204,1,1,10);
                 if(eredmeny[9]==1)
-                    tank1->particle_effect(0,eredmeny[5],-eredmeny[6],0,5,XX,YY,widgets,254,254,254,6);
+                    tank1->particle_effect(eredmeny[4],eredmeny[5],-eredmeny[6],0,5,XX,YY,widgets,254,254,254,6);
                 ms.set_turn();
                 ms.set_wind();
                 pb1->set_focusable(1);

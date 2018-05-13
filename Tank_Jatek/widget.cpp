@@ -54,9 +54,18 @@ void Widget::draw()
    gout << move_to(_X, _Y) << color(153,76,0) << box(_SX,_SY);
 }
 
-void Widget::draw(int r, int g, int b)
+void Widget::draw(int r, int g, int b, int XX, int YY, int SIZE)
 {
-    gout << move_to(_X,_Y) << color(r,g,b) << box(_SX,_SY);
+    double temp_X(_X), temp_Y(_Y), temp_SX(_SX), temp_SY(_SY);
+    if(_Y<0)
+        temp_Y=0;
+    if(_Y>YY-SIZE)
+        temp_SY=YY-_Y;
+    if(_X<0)
+        temp_X=0;
+    if(_X>XX-SIZE)
+        temp_SX=XX-_X;
+    gout << move_to(temp_X,temp_Y) << color(r,g,b) << box(temp_SX,temp_SY);
 }
 int Widget::get_val(){return -1;}
 
@@ -70,6 +79,10 @@ void Widget::particle_effect(double bx, double by, double vxb, double vyb, int n
         tvy /= 100;
         tvy += vyb;
         tvx += vxb/5;
+        if(bx<0)
+            bx=0;
+        if(bx>XX-SIZE)
+            bx=XX-SIZE;
         Particle t(bx,by,SIZE,SIZE);
         particles.push_back(t);
         particles[i].set_vy(tvy);
@@ -105,7 +118,7 @@ void Widget::particle_effect(double bx, double by, double vxb, double vyb, int n
                 particles[i].set_vy(particles[i].get_vy()+gravity);
                 particles[i]._Y+=particles[i].get_vy();
                 particles[i]._X+=particles[i].get_vx();
-                if(particles[i]._X<0 || particles[i]._X>XX-SIZE || particles[i]._Y > YY-SIZE)
+                if(particles[i]._X+SIZE<0 || particles[i]._X>XX || particles[i]._Y > YY)
                     particles.erase (particles.begin()+i);
             }
             gout << move_to(0,0) << color(102,178,255) << box(XX,YY);
@@ -113,7 +126,7 @@ void Widget::particle_effect(double bx, double by, double vxb, double vyb, int n
                 w->draw();
             }
             for(size_t i=0; i<particles.size(); i++){
-                particles[i].draw(particles[i].get_r(),particles[i].get_g(),particles[i].get_b());
+                particles[i].draw(particles[i].get_r(),particles[i].get_g(),particles[i].get_b(),XX,YY,SIZE);
             }
             gout << refresh;
         }
@@ -170,7 +183,7 @@ void Widget::blood_effect(double bx, double by, double vxb, double vyb, int num,
                 particles[i].set_vy(particles[i].get_vy()+gravity);
                 particles[i]._Y+=particles[i].get_vy();
                 particles[i]._X+=particles[i].get_vx();
-                if(particles[i]._X<0 || particles[i]._X>XX-SIZE || particles[i]._Y > YY-SIZE)
+                if(particles[i]._X+SIZE<0 || particles[i]._X>XX || particles[i]._Y > YY)
                     particles.erase (particles.begin()+i);
             }
             gout << move_to(0,0) << color(102,178,255) << box(XX,YY);
@@ -178,7 +191,7 @@ void Widget::blood_effect(double bx, double by, double vxb, double vyb, int num,
                 w->draw();
             }
             for(size_t i=0; i<particles.size(); i++){
-                particles[i].draw(particles[i].get_r(),particles[i].get_g(),particles[i].get_b());
+                particles[i].draw(particles[i].get_r(),particles[i].get_g(),particles[i].get_b(),XX,YY,SIZE);
             }
             counter++;
             gout << refresh;

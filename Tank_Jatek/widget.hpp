@@ -29,7 +29,7 @@ public:
     }
 
     virtual void handle(genv::event ev);
-    virtual void draw(int r, int g, int b);
+    virtual void draw(int r, int g, int b, int XX, int YY, int SIZE);
     virtual void draw();
     virtual int get_val();
     virtual void bullet_draw(double bx, double by, int XX, int YY, std::vector<Widget*> widgets);
