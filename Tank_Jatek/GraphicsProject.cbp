@@ -42,8 +42,6 @@
 		</Linker>
 		<Unit filename="clouds.cpp" />
 		<Unit filename="clouds.hpp" />
-		<Unit filename="lista.cpp" />
-		<Unit filename="lista.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="master.cpp" />
 		<Unit filename="master.hpp" />

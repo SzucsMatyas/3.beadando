@@ -1,7 +1,6 @@
 #include "graphics.hpp"
 #include "widget.hpp"
 #include "szamolo.hpp"
-#include "lista.hpp"
 #include "pushbutton.hpp"
 #include "window.hpp"
 #include "textbox.hpp"
